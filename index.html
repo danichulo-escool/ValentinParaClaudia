@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Love</title>
+    <title>Para Mi Amorcito</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -339,8 +339,8 @@
     <!-- Password Modal -->
     <div class="password-modal" id="passwordModal">
         <div class="password-content">
-            <h2>Enter the secret code</h2>
-            <input type="password" class="password-input" id="passwordInput" placeholder="Our special word...">
+            <h2>Pon el password secreto</h2>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Nuestra Cancion...">
             <button class="submit-btn" id="submitPassword">Enter</button>
         </div>
     </div>
@@ -464,7 +464,7 @@
             const submitPassword = document.getElementById('submitPassword');
             
             submitPassword.addEventListener('click', function() {
-                if (passwordInput.value.toLowerCase() === 'babycakes') {
+                if (passwordInput.value.toLowerCase() === 'Bipolar') {
                     passwordModal.style.opacity = '0';
                     setTimeout(() => {
                         passwordModal.style.display = 'none';
@@ -480,11 +480,11 @@
                     }, 500);
                 } else {
                     passwordInput.value = '';
-                    passwordInput.placeholder = 'Try again, my love...';
+                    passwordInput.placeholder = 'No es esa...';
                     passwordInput.style.borderColor = '#ff4d4d';
                     setTimeout(() => {
                         passwordInput.style.borderColor = '#ffb7c5';
-                        passwordInput.placeholder = 'Our special word...';
+                        passwordInput.placeholder = 'Nuestra Cancion...';
                     }, 1500);
                 }
             });
@@ -552,3 +552,4 @@
     </script>
 </body>
 </html>
+
